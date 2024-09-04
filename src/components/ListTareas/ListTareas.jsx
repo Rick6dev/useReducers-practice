@@ -60,7 +60,7 @@ const ListTareas = () => {
         {task && task.map((tas, index) => (
           <div key={tas.id}>
             <p>{tas.title}</p>
-            <button onClick={() => handleEdit(index)}>Editar</button>
+            <button onClick={() => handleEdit(index)}>Editars</button>
             <button onClick={() => dispatch({ type: 'remover_task', index })}>Eliminar</button>
           </div>
         ))}
